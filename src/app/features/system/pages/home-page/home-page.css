@@ -1,0 +1,8 @@
+section { background: white; border: 1px solid #cbd5e1; border-radius: 1rem; padding: 1.5rem; }
+h2 { margin-top: 0; }
+p { line-height: 1.6; }
+button { background: #143c60; color: white; border: 0; border-radius: .5rem; padding: .7rem 1rem; }
+button:disabled { opacity: .6; cursor: wait; }
+.success { color: #166534; }
+.error { color: #991b1b; }
+.note { color: #475569; margin-bottom: 0; font-size: .95rem; }

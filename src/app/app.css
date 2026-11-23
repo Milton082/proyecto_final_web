@@ -1,0 +1,4 @@
+:host { display: block; max-width: 960px; margin: 0 auto; padding: 3rem 1.5rem; }
+.app-header { margin-bottom: 2rem; }
+.app-header span { color: #475569; }
+h1 { color: #143c60; font-size: clamp(1.8rem, 5vw, 2.5rem); }

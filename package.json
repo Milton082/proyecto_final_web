@@ -1,14 +1,16 @@
 {
-  "name": "proyecto-interciclo-web",
+  "name": "reservas-laboratorios",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:ci": "ng test --watch=false"
   },
   "private": true,
+  "engines": { "node": ">=24.15.0 <25", "npm": ">=11 <12" },
   "packageManager": "npm@11.12.1",
   "dependencies": {
     "@angular/common": "^21.2.0",

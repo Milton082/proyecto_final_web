@@ -42,3 +42,26 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Backend y archivos locales
+**/.gradle/
+**/build/
+**/bin/
+backend/data/*
+!backend/data/.gitkeep
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.log
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
+*.jks
+*.p12
+
+# Mantener docs y Gradle Wrapper versionados
+!.gitkeep

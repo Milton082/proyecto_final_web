@@ -1,0 +1,17 @@
+<section aria-labelledby="connection-title">
+  <h2 id="connection-title">Estado de la conexión</h2>
+  <p>Esta primera entrega prepara el proyecto para el desarrollo en pareja.</p>
+  <div aria-live="polite" role="status">
+    @if (statusResource.isLoading()) {
+      <p>Comprobando conexión…</p>
+    } @else if (statusResource.error()) {
+      <p class="error">{{ statusResource.error()?.message }}</p>
+    } @else if (statusResource.hasValue()) {
+      <p class="success">Backend conectado · Base de datos disponible</p>
+    }
+  </div>
+  <button type="button" [disabled]="statusResource.isLoading()" (click)="statusResource.reload()">
+    Comprobar de nuevo
+  </button>
+  <p class="note">Los módulos de usuarios, laboratorios y reservas se incorporarán en las siguientes etapas.</p>
+</section>

@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+:root { font-family: system-ui, sans-serif; color: #1e293b; background: #f1f5f9; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button { font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }

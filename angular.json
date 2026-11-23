@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "proyecto-interciclo-web": {
+    "reservas-laboratorios": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -55,12 +55,13 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": { "proxyConfig": "proxy.conf.json" },
           "configurations": {
             "production": {
-              "buildTarget": "proyecto-interciclo-web:build:production"
+              "buildTarget": "reservas-laboratorios:build:production"
             },
             "development": {
-              "buildTarget": "proyecto-interciclo-web:build:development"
+              "buildTarget": "reservas-laboratorios:build:development"
             }
           },
           "defaultConfiguration": "development"
